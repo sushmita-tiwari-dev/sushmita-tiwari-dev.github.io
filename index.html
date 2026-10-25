@@ -151,8 +151,19 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-h
 .reel span.d{display:block;color:var(--on-indigo-muted);font-size:15px;margin-top:6px;line-height:1.5}
 
 /* proof links */
-.proof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:48px}
+.proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:48px}
 @media (max-width:900px){.proof{grid-template-columns:1fr}}
+
+/* writing */
+.writing{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:48px}
+@media (max-width:900px){.writing{grid-template-columns:1fr}}
+.wcard{display:flex;flex-direction:column;border-radius:24px;padding:28px;border:1px solid var(--line);background:var(--soft);text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}
+.wcard:hover{transform:translateY(-3px);border-color:var(--pink)}
+.wtag{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--pink)}
+.wcard h3{font-size:22px;margin:12px 0 0;line-height:1.25}
+.wmeta{margin:6px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
+.wdesc{margin:12px 0 0;color:var(--muted);flex:1}
+.wlink{margin-top:18px;font-weight:700;color:var(--pink)}
 .proof > div{border-radius:24px;padding:28px;border:1px solid var(--line);background:var(--soft)}
 .proof .big{background:var(--pink);color:#fff;border-color:transparent}
 .proof .big p{color:#FFE3EC}
@@ -215,6 +226,7 @@ footer a{color:#fff}
 <div class="navlinks">
 <a href="#work">Work</a>
 <a href="#videos">Videos</a>
+<a href="#writing">Writing</a>
 <a href="#services">Services</a>
 <a href="#about">About</a>
 <a class="btn btn-pink" href="#contact">Book a call</a>
@@ -398,7 +410,19 @@ footer a{color:#fff}
 <div class="big"><h3>SEO work portfolio</h3><p>Keyword research, on-page optimisation, link building and reports from real client projects.</p><a class="btn btn-white" href="https://drive.google.com/drive/folders/1H1nyHOntzIBczVrNmmpX97T_4u-D8tMM" target="_blank" rel="noopener">View my SEO work</a></div>
 <div><h3>Published case study</h3><p>How targeted ads, a new landing page and CRM automation lifted lead quality for a mortgage broker.</p><div class="chips"><a class="chip" href="https://www.webdew.com/case-studies/akal-mortgages" target="_blank" rel="noopener">Read it</a></div></div>
 <div><h3>Live websites</h3><p>Brands I’ve marketed, live today.</p><div class="chips"><a class="chip" href="https://khanstutorial.com/" target="_blank" rel="noopener">Khan’s Tutorial</a><a class="chip" href="https://akalmortgages.com/" target="_blank" rel="noopener">Akal Mortgages</a><a class="chip" href="https://www.webdew.com/" target="_blank" rel="noopener">webdew</a><a class="chip" href="https://curtisswright.com/" target="_blank" rel="noopener">Curtiss-Wright</a></div></div>
-<div><h3>Published writing</h3><p>Long-form SEO content I wrote for webdew (published under the webdew team byline).</p><div class="chips"><a class="chip" href="https://www.webdew.com/blog/edu-backlinks" target="_blank" rel="noopener">How to get Edu Backlinks: 11 strategies</a></div></div>
+</div>
+</section>
+
+<section id="writing" class="wrap pad" aria-labelledby="writingh">
+<div class="sec-head">
+<h2 id="writingh">Writing &amp; content</h2>
+<p>Blogs, guides and tools I’ve written for education and B2B marketing brands.</p>
+</div>
+<div class="writing">
+<a class="wcard" href="https://khanstutorial.com/shsat-score-calculator/" target="_blank" rel="noopener"><span class="wtag">Education · Interactive tool</span><h3>SHSAT Score Calculator</h3><p class="wmeta">Khan’s Tutorial</p><p class="wdesc">A score estimator that turns practice-test answers into a projected SHSAT score and compares it with NYC specialized high school cutoffs.</p><span class="wlink">Try the calculator →</span></a>
+<a class="wcard" href="https://khanstutorial.com/blog-posts/highest-sat-score/" target="_blank" rel="noopener"><span class="wtag">Education · Blog</span><h3>The Highest SAT Score: What It Means and How Students Achieve It</h3><p class="wmeta">Khan’s Tutorial · Dec 2025</p><p class="wdesc">What a perfect 1600 really reflects, and how parents can support SAT prep without adding pressure.</p><span class="wlink">Read the article →</span></a>
+<a class="wcard" href="https://www.webdew.com/blog/edu-backlinks" target="_blank" rel="noopener"><span class="wtag">Marketing · B2B</span><h3>How to Get Edu Backlinks: 11 Strategies That Work</h3><p class="wmeta">webdew · Jan 2025 · published under team byline</p><p class="wdesc">Eleven practical ways to earn backlinks from .edu websites to build domain authority and rankings.</p><span class="wlink">Read the article →</span></a>
+<a class="wcard" href="https://wakelet.com/wake/bu3MBktVVuJG5zu5dXfYW" target="_blank" rel="noopener"><span class="wtag">Education · Guest article</span><h3>What Is Content Curation for Learning?</h3><p class="wmeta">Wakelet</p><p class="wdesc">How educators can use digital content curation to build interactive, personalised learning experiences.</p><span class="wlink">Read the article →</span></a>
 </div>
 </section>
 
